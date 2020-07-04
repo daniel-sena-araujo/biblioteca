@@ -1,0 +1,22 @@
+unit util_dialogo;
+
+interface
+
+type
+  TDialogo = class
+  private
+  public
+    class procedure Informar(Mensagem : string);
+  end;
+
+implementation
+
+uses
+  Forms, Windows;
+
+class procedure TDialogo.Informar(Mensagem: string);
+begin
+  Application.MessageBox(PAnsiChar(Mensagem), 'Informação', MB_OK + MB_ICONINFORMATION);
+end;
+
+end.

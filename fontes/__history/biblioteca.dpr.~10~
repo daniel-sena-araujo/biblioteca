@@ -1,0 +1,20 @@
+program biblioteca;
+
+uses
+  Vcl.Forms,
+  formulario_principal in 'formulario_principal.pas' {FormularioPrincipal},
+  formulario_cadastro_leitor in 'formulario_cadastro_leitor.pas' {FormularioCadastroLeitor},
+  classe_leitor in 'classe_leitor.pas',
+  constante_estado_civil in 'constante_estado_civil.pas',
+  constante_escolaridade in 'constante_escolaridade.pas',
+  constante_ativo in 'constante_ativo.pas',
+  util_dialogo in 'util_dialogo.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFormularioPrincipal, FormularioPrincipal);
+  Application.Run;
+end.

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020/07/04 13:22:53.984,=C:\Projetos\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 13:23:26.242,C:\Projetos\Biblioteca\Fontes\formulario_principal.dfm=C:\Projetos\Unit1.dfm</Transaction>
+    <Transaction>2020/07/04 13:23:26.242,C:\Projetos\Biblioteca\Fontes\formulario_principal.pas=C:\Projetos\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 13:23:43.103,C:\Projetos\Biblioteca\Fontes\biblioteca.dproj=C:\Projetos\Project1.dproj</Transaction>
+    <Transaction>2020/07/04 13:28:28.568,=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 13:28:41.989,C:\Projetos\Biblioteca\Fontes\formulario_cadastro_cliente.dfm=C:\Projetos\Biblioteca\Fontes\Unit1.dfm</Transaction>
+    <Transaction>2020/07/04 13:28:41.989,C:\Projetos\Biblioteca\Fontes\formulario_cadastro_cliente.pas=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 13:29:01.048,C:\Projetos\Biblioteca\Fontes\formulario_cadastro_leitor.dfm=C:\Projetos\Biblioteca\Fontes\formulario_cadastro_cliente.dfm</Transaction>
+    <Transaction>2020/07/04 13:29:01.048,C:\Projetos\Biblioteca\Fontes\formulario_cadastro_leitor.pas=C:\Projetos\Biblioteca\Fontes\formulario_cadastro_cliente.pas</Transaction>
+    <Transaction>2020/07/04 14:22:27.222,=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 14:22:39.000,C:\Projetos\Biblioteca\Fontes\classe_leitor.pas=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 14:30:01.419,=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 14:30:11.267,C:\Projetos\Biblioteca\Fontes\enum_estado_civil.pas=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 14:42:43.329,C:\Projetos\Biblioteca\Fontes\constante_estado_civil.pas=C:\Projetos\Biblioteca\Fontes\enum_estado_civil.pas</Transaction>
+    <Transaction>2020/07/04 14:43:39.251,=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 14:43:49.529,C:\Projetos\Biblioteca\Fontes\constante_escolaridade.pas=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 14:46:04.485,=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 14:46:12.176,C:\Projetos\Biblioteca\Fontes\constante_ativo.pas=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 14:49:46.921,=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 14:49:55.568,C:\Projetos\Biblioteca\Fontes\util_dialogo.pas=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 15:02:40.571,=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 15:03:04.410,C:\Projetos\Biblioteca\Fontes\dao_leitor.pas=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 15:03:16.584,C:\Projetos\Biblioteca\Fontes\entidade_leitor.pas=C:\Projetos\Biblioteca\Fontes\classe_leitor.pas</Transaction>
+    <Transaction>2020/07/04 15:05:21.321,=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 15:05:41.640,C:\Projetos\Biblioteca\Fontes\data_module.pas=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 15:05:41.640,C:\Projetos\Biblioteca\Fontes\data_module.dfm=C:\Projetos\Biblioteca\Fontes\Unit1.dfm</Transaction>
+    <Transaction>2020/07/04 16:08:46.629,=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 16:08:57.953,C:\Projetos\Biblioteca\Fontes\formulario_consulta_leitor.pas=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 16:08:57.953,C:\Projetos\Biblioteca\Fontes\formulario_consulta_leitor.dfm=C:\Projetos\Biblioteca\Fontes\Unit1.dfm</Transaction>
+    <Transaction>2020/07/04 16:53:37.058,=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 16:53:46.730,C:\Projetos\Biblioteca\Fontes\util_formatador.pas=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 17:33:55.846,=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+    <Transaction>2020/07/04 17:34:06.160,C:\Projetos\Biblioteca\Fontes\util_validador.pas=C:\Projetos\Biblioteca\Fontes\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

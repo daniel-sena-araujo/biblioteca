@@ -1,0 +1,11 @@
+unit constante_ativo;
+
+interface
+
+const
+  A_ANO = 0;
+  A_SIM = 1;
+
+implementation
+
+end.

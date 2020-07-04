@@ -1,0 +1,13 @@
+unit constante_escolaridade;
+
+interface
+
+const
+  E_NAO_INFORMADA = 0;
+Fundamental
+Médio
+Superior
+
+implementation
+
+end.

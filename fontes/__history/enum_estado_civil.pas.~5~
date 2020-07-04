@@ -1,0 +1,10 @@
+unit enum_estado_civil;
+
+interface
+
+type
+  TEstadoCivil = (NaoInformado, Solteiro, Casado, Separado, Divorciado, Viuvo);
+
+implementation
+
+end.

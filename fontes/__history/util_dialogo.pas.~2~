@@ -1,0 +1,21 @@
+unit util_dialogo;
+
+interface
+
+type
+  TDialogo = class
+  private
+  public
+    class procedure Informar(Mensagem : string);
+  end;
+
+implementation
+
+{ TDialogo }
+
+class procedure TDialogo.Informar(Mensagem: string);
+begin
+
+end;
+
+end.

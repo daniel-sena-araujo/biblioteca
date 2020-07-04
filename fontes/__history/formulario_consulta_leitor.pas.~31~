@@ -1,0 +1,59 @@
+unit formulario_consulta_leitor;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, entidade_leitor, Vcl.StdCtrls,
+  Vcl.Buttons, Vcl.ComCtrls;
+
+type
+  TFormularioConsultaLeitor = class(TForm)
+    GrupoFiltros: TGroupBox;
+    TextoNomeCpf: TLabel;
+    CampoNomeCpf: TEdit;
+    BotaoConsultar: TBitBtn;
+    GrupoResultado: TGroupBox;
+    BarraStatus: TStatusBar;
+    ListaLeitores: TListView;
+    procedure FormCreate(Sender: TObject);
+    procedure BotaoConsultarClick(Sender: TObject);
+  private
+    FLeitor: TLeitor;
+  public
+    property Leitor : TLeitor read FLeitor;
+  end;
+
+var
+  FormularioConsultaLeitor: TFormularioConsultaLeitor;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  Generics.Collections, dao_leitor;
+
+procedure TFormularioConsultaLeitor.BotaoConsultarClick(Sender: TObject);
+var
+  Lista : TObjectList<TLeitor>;
+  Indice : Integer;
+  Item : TListItem;
+begin
+  Lista := TLeitorDAO.RecuperarPorNomeOuCpf(CampoNomeCpf.Text);
+
+  for Indice := 0 to Pred(Lista.Count) do
+  begin
+    Item := ListaLeitores.Items.Add();
+    Item.Caption := Lista.Items[Indice].Codigo.ToString();
+    Item.SubItems.Add(Lista.Items[Indice].Nome);
+    Item.SubItems.Add(Lista.Items[Indice].Cpf);
+  end;
+end;
+
+procedure TFormularioConsultaLeitor.FormCreate(Sender: TObject);
+begin
+  FLeitor := TLeitor.Create();
+end;
+
+end.
