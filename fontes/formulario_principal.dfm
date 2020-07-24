@@ -22,9 +22,6 @@ object FormularioPrincipal: TFormularioPrincipal
     Width = 784
     Height = 19
     Panels = <>
-    ExplicitLeft = 360
-    ExplicitTop = 448
-    ExplicitWidth = 0
   end
   object MenuPrincipal: TMainMenu
     Left = 336
@@ -34,6 +31,10 @@ object FormularioPrincipal: TFormularioPrincipal
       object MenuCadastroLeitores: TMenuItem
         Caption = 'Leitores'
         OnClick = MenuCadastroLeitoresClick
+      end
+      object MenuCadastroLivros: TMenuItem
+        Caption = 'Livros'
+        OnClick = MenuCadastroLivrosClick
       end
     end
   end

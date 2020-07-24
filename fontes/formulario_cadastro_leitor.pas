@@ -85,6 +85,9 @@ end;
 
 procedure TFormularioCadastroLeitor.BotaoConsultarClick(Sender: TObject);
 begin
+  if FormularioConsultaLeitor = nil then
+      Application.CreateForm(TFormularioConsultaLeitor, FormularioConsultaLeitor);
+
   FormularioConsultaLeitor.Leitor.Codigo := -1;
   FormularioConsultaLeitor.ShowModal();
 

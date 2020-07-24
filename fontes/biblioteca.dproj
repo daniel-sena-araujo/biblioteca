@@ -83,6 +83,8 @@
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -102,10 +104,6 @@
             <Form>FormularioPrincipal</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="formulario_cadastro_leitor.pas">
-            <Form>FormularioCadastroLeitor</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
         <DCCReference Include="entidade_leitor.pas"/>
         <DCCReference Include="constante_estado_civil.pas"/>
         <DCCReference Include="constante_escolaridade.pas"/>
@@ -123,6 +121,16 @@
         </DCCReference>
         <DCCReference Include="util_formatador.pas"/>
         <DCCReference Include="util_validador.pas"/>
+        <DCCReference Include="formulario_cadastro_leitor.pas">
+            <Form>FormularioCadastroLeitor</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="entidade_livro.pas"/>
+        <DCCReference Include="formulario_cadastro_livro.pas">
+            <Form>FormularioCadastroLivro</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="dao_livro.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -143,6 +151,11 @@
                 <Source>
                     <Source Name="MainSource">biblioteca.dpr</Source>
                 </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\DataExplorerDBXPluginEnt260.bpl">DBExpress Enterprise Data Explorer Integration</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k260.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp260.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
                 <DeployFile LocalName="Win32\Debug\biblioteca.exe" Configuration="Debug" Class="ProjectOutput">
