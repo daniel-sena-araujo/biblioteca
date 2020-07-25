@@ -12,7 +12,9 @@ type
     MenuPrincipal: TMainMenu;
     MenuCadastros: TMenuItem;
     MenuCadastroLeitores: TMenuItem;
+    MenuCadastroLivros: TMenuItem;
     procedure MenuCadastroLeitoresClick(Sender: TObject);
+    procedure MenuCadastroLivrosClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -26,7 +28,7 @@ implementation
 
 {$R *.dfm}
 
-uses formulario_cadastro_leitor;
+uses formulario_cadastro_leitor, formulario_cadastro_livro;
 
 procedure TFormularioPrincipal.MenuCadastroLeitoresClick(Sender: TObject);
 begin
@@ -34,6 +36,14 @@ begin
     Application.CreateForm(TFormularioCadastroLeitor, FormularioCadastroLeitor);
 
   FormularioCadastroLeitor.Show();
+end;
+
+procedure TFormularioPrincipal.MenuCadastroLivrosClick(Sender: TObject);
+begin
+  if FormularioCadastroLivro = nil then
+    Application.CreateForm(TFormularioCadastroLivro, FormularioCadastroLivro);
+
+  FormularioCadastroLivro.Show();
 end;
 
 end.

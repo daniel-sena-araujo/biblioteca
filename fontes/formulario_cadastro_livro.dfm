@@ -1,9 +1,9 @@
-object FormularioCadastroLeitor: TFormularioCadastroLeitor
+object FormularioCadastroLivro: TFormularioCadastroLivro
   Left = 0
   Top = 0
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 'Cadastro de Leitores'
+  Caption = 'Cadastro de Livros'
   ClientHeight = 333
   ClientWidth = 720
   Color = clBtnFace
@@ -22,7 +22,7 @@ object FormularioCadastroLeitor: TFormularioCadastroLeitor
   PixelsPerInch = 96
   TextHeight = 16
   object GrupoRegistro: TGroupBox
-    Left = 8
+    Left = 6
     Top = 8
     Width = 550
     Height = 300
@@ -35,61 +35,26 @@ object FormularioCadastroLeitor: TFormularioCadastroLeitor
       Height = 16
       Caption = 'C'#243'digo'
     end
-    object TextoNome: TLabel
+    object TextoTitulo: TLabel
       Left = 25
       Top = 77
-      Width = 33
+      Width = 32
       Height = 16
-      Caption = 'Nome'
+      Caption = 'T'#237'tulo'
     end
-    object TextoEndereco: TLabel
+    object TextoEditora: TLabel
       Left = 25
       Top = 129
-      Width = 53
+      Width = 40
       Height = 16
-      Caption = 'Endere'#231'o'
+      Caption = 'Editora'
     end
-    object TextoTelefone: TLabel
+    object TextoAutor: TLabel
       Left = 25
       Top = 181
-      Width = 50
+      Width = 31
       Height = 16
-      Caption = 'Telefone'
-    end
-    object TextoCpf: TLabel
-      Left = 201
-      Top = 181
-      Width = 22
-      Height = 16
-      Caption = 'CPF'
-    end
-    object TextoDataNascimento: TLabel
-      Left = 376
-      Top = 181
-      Width = 114
-      Height = 16
-      Caption = 'Data de Nascimento'
-    end
-    object TextoEstadoCivil: TLabel
-      Left = 25
-      Top = 233
-      Width = 65
-      Height = 16
-      Caption = 'Estado Civil'
-    end
-    object TextoEscolaridade: TLabel
-      Left = 201
-      Top = 233
-      Width = 72
-      Height = 16
-      Caption = 'Escolaridade'
-    end
-    object TextoAtivo: TLabel
-      Left = 376
-      Top = 233
-      Width = 28
-      Height = 16
-      Caption = 'Ativo'
+      Caption = 'Autor'
     end
     object CampoCodigo: TEdit
       Left = 25
@@ -101,94 +66,26 @@ object FormularioCadastroLeitor: TFormularioCadastroLeitor
       ReadOnly = True
       TabOrder = 0
     end
-    object CampoNome: TEdit
+    object CampoTitulo: TEdit
       Left = 25
       Top = 99
-      Width = 500
+      Width = 288
       Height = 24
       TabOrder = 1
     end
-    object CampoEndereco: TEdit
+    object CampoEditora: TEdit
       Left = 25
       Top = 151
-      Width = 500
+      Width = 288
       Height = 24
       TabOrder = 2
     end
-    object CampoDataNascimento: TMaskEdit
-      Left = 376
-      Top = 203
-      Width = 98
-      Height = 24
-      EditMask = '!99/99/9999;1; '
-      MaxLength = 10
-      TabOrder = 5
-      Text = '  /  /    '
-    end
-    object CampoTelefone: TMaskEdit
+    object CampoAutor: TEdit
       Left = 25
       Top = 203
-      Width = 125
+      Width = 288
       Height = 24
-      EditMask = '!\(99\) 99999-9999;0; '
-      MaxLength = 15
       TabOrder = 3
-      Text = ''
-    end
-    object CampoCpf: TMaskEdit
-      Left = 201
-      Top = 203
-      Width = 125
-      Height = 24
-      EditMask = '999\.999\.999\-99;0; '
-      MaxLength = 14
-      TabOrder = 4
-      Text = ''
-    end
-    object CampoEstadoCivil: TComboBox
-      Left = 25
-      Top = 255
-      Width = 125
-      Height = 24
-      Style = csDropDownList
-      ItemIndex = 0
-      TabOrder = 6
-      Text = 'N'#227'o Informado'
-      Items.Strings = (
-        'N'#227'o Informado'
-        'Solteiro'
-        'Casado'
-        'Separado'
-        'Divorciado'
-        'Vi'#250'vo')
-    end
-    object CampoEscolaridade: TComboBox
-      Left = 201
-      Top = 255
-      Width = 125
-      Height = 24
-      Style = csDropDownList
-      ItemIndex = 0
-      TabOrder = 7
-      Text = 'N'#227'o Informada'
-      Items.Strings = (
-        'N'#227'o Informada'
-        'Fundamental'
-        'M'#233'dio'
-        'Superior')
-    end
-    object CampoAtivo: TComboBox
-      Left = 376
-      Top = 255
-      Width = 125
-      Height = 24
-      Style = csDropDownList
-      ItemIndex = 0
-      TabOrder = 8
-      Text = 'N'#227'o'
-      Items.Strings = (
-        'N'#227'o'
-        'Sim')
     end
   end
   object GrupoAcoes: TGroupBox

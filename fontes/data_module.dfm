@@ -7,8 +7,8 @@ object ConexaoBancoDados: TConexaoBancoDados
     Params.Strings = (
       'Database=db_biblioteca'
       'User_Name=sa'
-      'Password=123'
-      'Server=PC-DANIEL'
+      'Password=1devsecnpi'
+      'Server=DESKTOP-KQE2QPS'
       'DriverID=MSSQL')
     LoginPrompt = False
     Left = 72
